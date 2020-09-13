@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial, sans-serif;
 }
 
 .mainBoard {
@@ -36,12 +37,12 @@ ul.paperList {
 .paperList li {
     top: 0;
     left: 0;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     background-color: #feca57;
     position: absolute;
     transform-style: preserve-3d;
-    transform: translateX(150px) rotate3d(116, -35, 26, 75deg);
+    transform: translateZ(-300px) rotate3d(116, -35, 26, 75deg);
     border: 1px solid #222f3e;
     transition: transform .5s ease;
 }
@@ -67,5 +68,5 @@ ul.paperList {
 }
 
 .paperList li:first-child:hover {
-    transform: translate(150px, 250px) scale(1);
+    transform: translateZ(200px);
 }
