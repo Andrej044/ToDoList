@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainBoard {
+    margin: auto 50%;
+    width: 50vw;
+    height: 100vh;
+    transform: translateX(-50%);
+    background-color: #222f3e;
+}
+
+.inputForm {
+    background-color: #1dd1a1;
+
+}
+
+.inputForm,
+ul.paperList {
+    margin: auto 50%;
+    transform: translateX(-50%);
+}
+
+ul.paperList {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+
+.paperList li {
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 250px;
+    background-color: #feca57;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateX(150px) rotate3d(116, -35, 26, 75deg);
+    border: 1px solid #222f3e;
+    transition: transform .5s ease;
+}
+
+.paperList li:first-child {
+    top: 1px;
+}
+
+.paperList li:nth-of-type(2) {
+    top: 3px;
+}
+
+.paperList li:nth-of-type(3) {
+    top: 5px;
+}
+
+.paperList li:nth-of-type(4) {
+    top: 7px;
+}
+
+.paperList li:nth-of-type(5) {
+    top: 9px;
+}
+
+.paperList li:first-child:hover {
+    transform: translate(150px, 250px) scale(1);
+}
