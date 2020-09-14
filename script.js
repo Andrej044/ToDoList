@@ -9,10 +9,18 @@ let mouseYpos = 0;
 
 // getter for X and Y mouse coordinates
 const getMousePos = () => {
-    document.body.addEventListener('mousemove', (e) => {
+    let arr = document.body.addEventListener('mousemove', (e) => {
         mouseXpos = e.clientX;
         mouseYpos = e.clientY;
-        console.log(mouseXpos, mouseYpos);
+        console.log(mouseYpos, mouseXpos);
     })
 }
+
 getMousePos();
+
+listItems.forEach(item => {
+    item.addEventListener('drag', )
+})
+document.body.addEventListener('mousemove', () => {
+    console.log(mouseYpos, mouseXpos);
+})
