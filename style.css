@@ -27,6 +27,7 @@ ul.paperList {
 ul.paperList {
     list-style: none;
     width: 100%;
+    height: 100vh;
     display: flex;
     position: relative;
     perspective: 1000px;
@@ -42,7 +43,7 @@ ul.paperList {
     background-color: #feca57;
     position: absolute;
     transform-style: preserve-3d;
-    transform: translateZ(-300px) rotate3d(116, -35, 26, 75deg);
+    /* transform: translateZ(-300px) rotate3d(116, -35, 26, 75deg); */
     border: 1px solid #222f3e;
     transition: transform .5s ease;
 }
