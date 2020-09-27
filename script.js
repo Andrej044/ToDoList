@@ -1,11 +1,12 @@
 const data = {
     top: 10,
     left: 10,
+    bottom: 0,
     countItem: 10,
     mainBoard: document.querySelector(".mainBoard"),
     cards: document.querySelector(".cards"),
     inputValue: document.getElementById('inputValue'),
-    submit: document.getElementById('submit'),
+    submit: document.querySelector('.submit'),
     index: 9,
 
 }
@@ -22,7 +23,6 @@ class Item {
             data.left = data.left + 2;
             data.top = data.top + 2;
             this.elem.style.left = `${data.left}px`;
-            this.elem.style.top = `${data.top}px`;
             data.cards.appendChild(this.elem);
             this.elem.textContent = i;
 
@@ -44,7 +44,8 @@ class Item {
             divOne.addEventListener('mousedown', (e) => {
                 posX = e.offsetX;
                 posY = e.offsetY;
-                divOne.style.backgroundColor = "gray";
+                divOne.classList.add('newBoxStyle');
+
                 divOne.style.zIndex = ++zIndex;
                 flag = true;
                 // console.log("x:" + posX, "y:" + posY)
@@ -62,7 +63,8 @@ class Item {
             })
 
             divOne.addEventListener('mouseup', (e) => {
-                divOne.style.backgroundColor = " #1dd1a1"
+                divOne.classList.remove('newBoxStyle');
+
                 flag = false;
             })
         })
