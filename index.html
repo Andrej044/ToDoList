@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>ToDoList</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <div class="mainBoard">
-            <div class="cards"></div>
-            <footer>
-                <input type="text" name="inputValue" id="inputValue" placeholder="type your member" value="">
-                <input type="submit" value="submit" class="submit">
-            </footer>
-
-        </div>
-
+      <div class="mainBoard">
+        <div class="cards"></div>
+        <footer>
+          <input
+            type="text"
+            name="inputValue"
+            id="inputValue"
+            placeholder="type your member"
+            value=""
+          />
+          <form>
+            <select id="plan" name="plan">
+              <option value="wrk">Work</option>
+              <option value="stds">Studies</option>
+              <option value="pln">Plan's</option>
+              <option value="shp">Shopping</option>
+            </select>
+          </form>
+          <input type="submit" value="submit" class="submit" />
+        </footer>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
