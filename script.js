@@ -103,17 +103,20 @@ class Item {
       console.log(data.index);
     });
 
-    // data.inputValue.addEventListener('focusout', () => {
-    //     data.inputValue.value = value;
-    // })
 
     data.submit.addEventListener("click", (e) => {
+      String.prototype.capitalize = function () {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+      }
+
       let num = data.index + 1;
       let h2 = document.querySelector(`.block:nth-of-type(${num})>h2`);
       if (h2.textContent == "") {
+        let str = data.inputTitleValue.value;
+        data.inputTitleValue.value = str.capitalize();
         h2.textContent = data.inputTitleValue.value;
         data.inputTitleValue.value = "";
-      } else {
+      } else if (data.inputTitleValue.value != "") {
         alert("your title already exist");
         data.inputTitleValue.value = "";
       }
