@@ -8,12 +8,10 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(
-      circle,
+  background: radial-gradient(circle,
       rgba(0, 0, 0, 0.8298669809720763) 30%,
       rgba(0, 0, 0, 0.7486344879748774) 83%,
-      rgba(33, 32, 32, 0.7150210425967262) 100%
-    ),
+      rgba(33, 32, 32, 0.7150210425967262) 100%),
     url(/Projects/ToDoList/img/kitchen.png);
 
   background-position: right;
@@ -82,6 +80,10 @@
   cursor: pointer;
 }
 
+li.lineThrough {
+  text-decoration: line-through;
+}
+
 footer {
   width: 100%;
   position: absolute;
@@ -92,7 +94,8 @@ footer {
   justify-content: left;
 }
 
-#inputValue {
+#inputValue,
+#inputTitleValue {
   width: 150px;
   background: transparent;
   border: none;
@@ -101,11 +104,12 @@ footer {
   padding: 5px 10px 12px 10px;
   box-sizing: border-box;
   border-radius: 0 5px;
-  box-shadow: 2px 0 5px #634b09, 2px 0 5px #181508, inset 0px -20px 20px #ffff;
+  box-shadow: 2px 0 5px #634b09, inset 0px -20px 20px #ffff;
   transition: width 0.4s ease-in-out;
 }
 
-#inputValue:focus {
+#inputValue:focus,
+#inputTitleValue:focus {
   width: 50%;
   border: solid 1px #353b48;
   outline: none;
@@ -137,6 +141,7 @@ footer {
 .inputForm {
   background-color: #1dd1a1;
 }
+
 #plan {
   width: 20%;
   padding: 8px 10px;
