@@ -9,7 +9,11 @@
   width: 100vw;
   height: 100vh;
   background-position: right;
-
+  background: radial-gradient(circle,
+      rgba(0, 0, 0, 0.8298669809720763) 30%,
+      rgba(0, 0, 0, 0.7486344879748774) 83%,
+      rgba(33, 32, 32, 0.7150210425967262) 100%),
+    url(img/kitchen.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@
   height: 100vh;
   perspective: 1000px;
   /* transform: translateX(-50%); */
-  background: url(ToDoList/img/refrigerator-1129919.png);
+  background: url(img/refrigerator-1129919.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
