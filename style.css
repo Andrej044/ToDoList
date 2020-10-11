@@ -25,11 +25,9 @@
 }
 
 .mainBoard {
-  /* margin: auto 50%; */
   width: 50vw;
   height: 100vh;
   perspective: 1000px;
-  /* transform: translateX(-50%); */
   background: url(img/refrigerator-1129919.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +39,6 @@
 .cards {
   width: 50%;
   height: 100%;
-  /* background: #a1a1a1; */
   z-index: -2;
   position: fixed;
   perspective: 100px;

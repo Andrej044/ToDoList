@@ -41,7 +41,7 @@ class Item {
 
         divOne.style.zIndex = ++zIndex;
         flag = true;
-        // console.log("x:" + posX, "y:" + posY)
+
       });
       divOne.addEventListener("mousemove", (e) => {
         if (flag) {
@@ -49,7 +49,7 @@ class Item {
             e.clientX - posX - data.mainBoard.offsetLeft
           }px`;
           divOne.style.top = `${e.clientY - posY}px`;
-          // console.log("x:" + e.clientX, "y:" + e.clientY)
+
         }
       });
       divOne.addEventListener("mouseout", () => {
