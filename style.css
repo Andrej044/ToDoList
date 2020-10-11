@@ -12,7 +12,7 @@
       rgba(0, 0, 0, 0.8298669809720763) 30%,
       rgba(0, 0, 0, 0.7486344879748774) 83%,
       rgba(33, 32, 32, 0.7150210425967262) 100%),
-    url(/Projects/ToDoList/img/kitchen.png);
+    url(img/kitchen.png);
 
   background-position: right;
 
@@ -30,7 +30,7 @@
   height: 100vh;
   perspective: 1000px;
   /* transform: translateX(-50%); */
-  background: url(/Projects/ToDoList/img/refrigerator-1129919.png);
+  background: url(img/refrigerator-1129919.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
