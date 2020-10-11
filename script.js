@@ -27,9 +27,6 @@ class Item {
   //realize move method for a div block
   moveElem() {
     const divAll = document.querySelectorAll(".block");
-    // document.body.addEventListener('mousemove', (e) => {
-    //     console.log(e.clientX, e.offsetY);
-    // })
 
     divAll.forEach((divOne) => {
       let posX;
@@ -79,7 +76,6 @@ class Item {
   //Line through add class
   alreadyDone() {
     const liItem = [...document.querySelectorAll("li")];
-    console.log(liItem);
     liItem.forEach((item) => {
       item.addEventListener("click", () => {
         item.classList.add("lineThrough");
@@ -100,24 +96,21 @@ class Item {
     data.inputValue.addEventListener("focusin", () => {
       data.inputValue.value = "";
       item.chooseElem();
-      console.log(data.index);
+
     });
 
 
     data.submit.addEventListener("click", (e) => {
-      String.prototype.capitalize = function () {
-        return this.charAt(0).toUpperCase() + this.slice(1);
-      }
 
       let num = data.index + 1;
       let h2 = document.querySelector(`.block:nth-of-type(${num})>h2`);
       if (h2.textContent == "") {
         let str = data.inputTitleValue.value;
-        data.inputTitleValue.value = str.capitalize();
+        data.inputTitleValue.value = str[0].toUpperCase() + str.slice(1);
         h2.textContent = data.inputTitleValue.value;
         data.inputTitleValue.value = "";
       } else if (data.inputTitleValue.value != "") {
-        alert("your title already exist");
+        alert("title already exist");
         data.inputTitleValue.value = "";
       }
       if (data.inputValue.value != "") {

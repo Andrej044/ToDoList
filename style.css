@@ -65,15 +65,25 @@
   top: 75%;
   padding-left: 1em;
   word-wrap: break-word;
+  letter-spacing: 2px;
+}
+
+.block h2 {
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Sansita Swashed', cursive;
+
 }
 
 .block ul {
   list-style: decimal;
+  list-style-position: inside;
   padding: 5%;
 }
 
 .block ul li {
   font-size: 14px;
+  color: darkslateblue;
 }
 
 .block ul li:hover {
